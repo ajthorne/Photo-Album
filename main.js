@@ -1,3 +1,4 @@
+// variables
 var albumGallery = $('.album-gallery');
 var album1 = $('.album1');
 var albumOne = $('.beach-gallery');
@@ -17,10 +18,32 @@ var img = $('img');
 var onlyPhoto = $('.only-photo');
 var menuImg = $('.menu-img');
 var main = $('body');
+var home = $('.fa-home');
+var homePage = $('.home');
 
-//clicking on album gallery, adds "sidegallery" class to it
-//which floats it left and adds different styles
+
 $(document).ready(function() {
+  //clicking on home button returns page to default
+    homePage.on('click', function() {
+        $(albumGallery).removeClass('gallerySide');
+        $(albums).addClass('album');
+        $(header).removeClass('hidden');
+        $(menuImg).removeClass('hidden');
+        $(main).css({
+            backgroundColor: 'white'
+        });
+        $(home).addClass('hidden');
+        $(albumOne).addClass('hidden');
+        $(albumTwo).addClass('hidden');
+        $(albumThree).addClass('hidden');
+        $(albumFour).addClass('hidden');
+        $(albumFive).addClass('hidden');
+        $(albumSix).addClass('hidden');
+    });
+
+    //clicking on album, adds "sidegallery" class to navigation
+    //which floats it left and adds different styles
+    //hides and shows appropriate classes
     album1.on('click', function(evt) {
         $(albumOne).removeClass('hidden');
         $(albumGallery).addClass('gallerySide');
@@ -32,7 +55,10 @@ $(document).ready(function() {
         $(albumSix).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
     album2.on('click', function(evt) {
@@ -46,7 +72,10 @@ $(document).ready(function() {
         $(albumSix).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
     album3.on('click', function(evt) {
@@ -60,7 +89,10 @@ $(document).ready(function() {
         $(albumSix).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
     album4.on('click', function(evt) {
@@ -74,7 +106,10 @@ $(document).ready(function() {
         $(albumSix).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
     album5.on('click', function(evt) {
@@ -88,7 +123,10 @@ $(document).ready(function() {
         $(albumSix).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
     album6.on('click', function(evt) {
@@ -102,9 +140,14 @@ $(document).ready(function() {
         $(albumOne).addClass('hidden');
         $(header).addClass('hidden');
         $(menuImg).addClass('hidden');
-        $(main).css({backgroundColor: '#C3EBE3'});
+        $(main).css({
+            backgroundColor: '#C3EBE3'
+        });
+        $(home).removeClass('hidden');
     });
 
+    //clicking on an image shows the image individually
+    //hides sidebar
     img.on('click', function() {
         $(this).addClass('solo-view');
         $(img).addClass('hidden');
@@ -112,11 +155,16 @@ $(document).ready(function() {
         $(albumGallery).addClass('hidden');
         $(albumGallery).removeClass('gallerySide');
     });
-var backButton = $('.back-button');
-    backButton.click(function(){
-        history.go(-1);
-        console.log('hi');
-    });
+
+    //back button code --not working
+    // var backButton = $('.back-button');
+    //     backButton.on('hashchange', function() {
+    //       if (location.hash === '#back')
+    //       backButton.attr('src', '#album4');
+    //         console.log('hi');
+    //         });
+    //use location.hash if statement? event?
+
 });
 
 

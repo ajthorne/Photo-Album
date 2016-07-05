@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
+    <link rel="stylesheet" href="app/styles/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
     <meta charset="utf-8">
     <title>Photo Album</title>
@@ -10,118 +12,131 @@
 
 <body>
     <header>
-        <h1>My Albums</h1>
+        <h1>
+My Albums</h1>
+
     </header>
     <main class="album-wrapper">
         <section class="album-gallery">
+            <div class="home">
+                <a href="#home"><i class="fa fa-home hidden"></i></a>
+            </div>
             <div class="album album1">
-              <img class="menu-img" src="app/images/beach4.jpeg"/>
+                <img class="menu-img" src="app/images/beach4.jpeg" />
                 <a href="#album1">Beach Album</a>
             </div>
             <div class="album album2">
-              <img class="menu-img" src="app/images/books5.jpeg"/>
+                <img class="menu-img" src="app/images/books5.jpeg" />
                 <a href="#album2">Books Album</a>
             </div>
             <div class="album album3">
-              <img class="menu-img" src="app/images/cat5.jpg"/>
+                <img class="menu-img" src="app/images/cat5.jpg" />
                 <a href="#album3">Cats Album</a>
             </div>
             <div class="album album4">
-              <img class="menu-img" src="app/images/music4.jpeg"/>
+                <img class="menu-img" src="app/images/music4.jpeg" />
                 <a href="#album4">Music Album</a>
             </div>
             <div class="album album5">
-              <img class="menu-img" src="app/images/nyc5.jpeg"/>
+                <img class="menu-img" src="app/images/nyc5.jpeg" />
                 <a href="#album5">NYC Album</a>
             </div>
             <div class="album album6">
-              <img class="menu-img" src="app/images/travel5.jpeg"/>
+                <img class="menu-img" src="app/images/travel5.jpeg" />
                 <a href="#album6">Travel Album</a>
             </div>
         </section>
         <section class="gallery beach-gallery hidden">
-          <div class="title"><h2>Album 1</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/beach1.jpeg" data-index="1"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/beach2.jpeg" data-index="2"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/beach3.jpeg" data-index="3"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 1</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/beach1.jpeg" data-index="1" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/beach2.jpeg" data-index="2" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/beach3.jpeg" data-index="3" /></a>
+            </div>
         </section>
         <section class="gallery books-gallery hidden">
-        <div class="title"><h2>Album 2</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/books1.jpeg" data-index="4"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/book2.jpeg" data-index="5"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/books3.jpeg" data-index="6"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 2</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/books1.jpeg" data-index="4" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/book2.jpeg" data-index="5" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/books3.jpeg" data-index="6" /></a>
+            </div>
         </section>
         <section class="gallery cats-gallery hidden">
-          <div class="title"><h2>Album 3</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/cat1.jpeg" data-index="7"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/cat2.jpeg" data-index="8"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/cat3.jpeg" data-index="9"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/cat4.jpeg" data-index="10"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 3</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/cat1.jpeg" data-index="7" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/cat2.jpeg" data-index="8" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/cat3.jpeg" data-index="9" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/cat4.jpeg" data-index="10" /></a>
+            </div>
         </section>
         <section class="gallery music-gallery hidden">
-          <div class="title"><h2>Album 4</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/music1.jpeg" data-index="11"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/music2.jpeg" data-index="12"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/music3.jpeg" data-index="13"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 4</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/music1.jpeg" data-index="11" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/music2.jpeg" data-index="12" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/music3.jpeg" data-index="13" /></a>
+            </div>
         </section>
         <section class="gallery nyc-gallery hidden">
-          <div class="title"><h2>Album 5</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/nyc1.jpg" data-index="14"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/nyc2.jpeg" data-index="15"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/nyc3.jpeg" data-index="16"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/nyc4.jpg" data-index="17"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 5</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/nyc1.jpg" data-index="14" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/nyc2.jpeg" data-index="15" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/nyc3.jpeg" data-index="16" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/nyc4.jpg" data-index="17" /></a>
+            </div>
         </section>
         <section class="gallery travel-gallery hidden">
-          <div class="title"><h2>Album 6</h2></div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/travel1.jpeg" data-index="18"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/travel2.jpeg" data-index="19"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/travel3.jpeg" data-index="20"/></a>
-          </div>
-          <div class="photo">
-            <a href="#photo"><img src="app/images/travel4.jpeg" data-index="21"/></a>
-          </div>
+            <div class="title">
+                <h2>Album 6</h2></div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/travel1.jpeg" data-index="18" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/travel2.jpeg" data-index="19" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/travel3.jpeg" data-index="20" /></a>
+            </div>
+            <div class="photo">
+                <a href="#photo"><img src="app/images/travel4.jpeg" data-index="21" /></a>
+            </div>
         </section>
         <section class="only-photo hidden">
-          <input type="button" class="back-button" value="Back to Album"/>
+            <a href="#back">
+                <button class="back-button"><i class="fa fa-arrow-left"></i>Back to Album</button>
+            </a>
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>

@@ -1,4 +1,7 @@
-@import 'variables.scss';
+$background-color: #C3EBE3;
+$sidebar-color: #C3EBE3;
+$black: #000;
+
 body {
     font-family: sans-serif;
     text-align: center;
@@ -16,24 +19,26 @@ body {
         width: 100%;
         margin: 0 auto;
         .album {
-            width: 25%;
+            width: 23%;
             display: inline-block;
             margin-top: 1rem;
             padding: 1rem;
+            font-family: 'Amatica SC', cursive;
             // border: 2px solid black;
+            font-size: 1.5rem;
             .menu-img {
                 width: 100%;
                 border-bottom-left-radius: 30px;
                 border-top-right-radius: 30px;
-
             }
             a {
                 text-decoration: none;
                 vertical-align: sub;
                 color: black;
             }
-            a:hover{
-              font-weight: bold
+            a:hover {
+                font-weight: bold;
+                text-decoration: overline;
             }
         }
     }
@@ -51,10 +56,14 @@ body {
             text-decoration: none;
             color: #7A7B81;
             text-transform: uppercase;
-            text-shadow: 0px 0px 10px #A5A4A9;
         }
         a:hover {
-          text-shadow: 0 0 0;
+            text-decoration: underline;
+        }
+        .fa-home {
+            margin-top: 1rem;
+            padding: 0;
+            font-size: 1.5rem;
         }
     }
     .gallery {
@@ -70,11 +79,11 @@ body {
             margin-top: 0;
             padding-top: 5px;
             font-size: 2rem;
+            font-family: 'Amatica SC', cursive;
         }
         img {
             width: 100%;
             border-radius: 5px;
-
         }
         .solo-view {
             width: 50%;
@@ -90,9 +99,12 @@ body {
         position: absolute;
         top: 10px;
         left: 10px;
-        input {
+        button {
             border-radius: 5px;
             background-color: #CACACA;
+            .fa-arrow-left {
+                padding-right: 0.5rem;
+            }
         }
     }
 }
